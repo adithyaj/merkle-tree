@@ -1,31 +1,36 @@
 
 class Node:
-	"""Node wrapper class implementation. 
-	Useful for tracking depth of a node when
-	constructing the merkle proof"""
-	def __init__(self, direction, tx):
-		self._direction = direction
-		self._tx = tx
+    """Node wrapper class implementation. 
+    Useful for tracking depth of a node when
+    constructing the merkle proof"""
+    def __init__(self, direction, tx):
+        self._direction = direction
+        self._tx = tx
 
-	def __eq__(self, other):
-		"""Overrides the default implementation"""
-		if isinstance(self, other.__class__):
-			return self.__dict__ == other.__dict__
-		return False
+    def __eq__(self, other):
+        """Overrides the default implementation"""
+        if isinstance(self, other.__class__):
+            return self.__dict__ == other.__dict__
+        return False
 
-	def __cmp__(self, other):
-		"""Overrides the default implementation"""
-		if isinstance(self, other.__class__):
-			return self.__dict__ == other.__dict__
-		return False
-	
+    def __cmp__(self, other):
+        """Overrides the default implementation"""
+        if isinstance(self, other.__class__):
+            return self.__dict__ == other.__dict__
+        return False
 
-	@property
-	def direction(self):
-		"""int: Allow user to query node for its depth"""
-		return self._direction
+    def __str__(self):
+        return '%s %s' % (self._direction, self._tx)
 
-	@property
-	def tx(self):
-		"""string: Allow user to query node for its tx string"""
-		return self._tx
+    def __repr__(self):
+        return str(self)
+
+    @property
+    def direction(self):
+        """int: Allow user to query node for its depth"""
+        return self._direction
+
+    @property
+    def tx(self):
+        """string: Allow user to query node for its tx string"""
+        return self._tx
