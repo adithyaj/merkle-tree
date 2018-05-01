@@ -1,3 +1,6 @@
+Partners: Hamdi Allam, Aditya Jaychandran
+SSIDs: 3033254473,  
+
 # Merkle Proof and Verification
 
 ## Introduction
