@@ -1,5 +1,5 @@
-Partners: Hamdi Allam, Aditya Jaychandran
-SSIDs: 3033254473,  
+Partners: Hamdi Allam, Adithya Jayachandran
+SSIDs: 3033254473, 25964798 
 
 # Merkle Proof and Verification
 
